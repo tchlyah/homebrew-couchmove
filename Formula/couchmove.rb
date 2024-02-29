@@ -1,25 +1,25 @@
-# Generated with JReleaser 1.7.0 at 2024-02-29T05:59:28.024Z
+# Generated with JReleaser 1.7.0 at 2024-02-29T07:15:40.367Z
 class Couchmove < Formula
   desc "Couchmove is a database migration tool for Couchbase"
   homepage "https://github.com/tchlyah/couchmove"
-  version "3.4"
+  version "3.4.1"
   license "APACHE-2.0"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-linux-aarch_64.zip"
-    sha256 "b304395364fc088b1522acbf598faf7557a0bade5647112ccbe5effa1c845234"
+    url "https://github.com/tchlyah/couchmove/releases/download/v3.4.1/couchmove-3.4.1-linux-aarch_64.zip"
+    sha256 "e495c603ccb245b066be3ad37b29b436c8819507ca03f332708f71d5357c192c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-linux-x86_64.zip"
-    sha256 "7997de9e9e228310c2676f69032607bb07a2e9b859865bcb96a3b01c9109163d"
+    url "https://github.com/tchlyah/couchmove/releases/download/v3.4.1/couchmove-3.4.1-linux-x86_64.zip"
+    sha256 "aa311d1d6cbbf379e6fab5da6b00b09ef1b8d25178abb9a4a0bbf6a36eb59b86"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-osx.zip"
-    sha256 "61b79569996b5c5d93451d60ffcad03ad26b5e36545d50d5734ddbeaf08715b2"
+    url "https://github.com/tchlyah/couchmove/releases/download/v3.4.1/couchmove-3.4.1-osx.zip"
+    sha256 "71ef85fb66305030ea86c44d83d5489f82e6407f04d9f901831040712ac5a39a"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-osx-aarch_64.zip"
-    sha256 "b61716e064435ebe244cf746cba870989cb53f9d2f3517eaea3c92703dacdde9"
+    url "https://github.com/tchlyah/couchmove/releases/download/v3.4.1/couchmove-3.4.1-osx-aarch_64.zip"
+    sha256 "ebe8eb5677791d8a606d2a46532b194179845b98b36910d96cc52c646ba52ea7"
   end
 
 
@@ -41,6 +41,6 @@ class Couchmove < Formula
 
   test do
     output = shell_output("#{bin}/couchmove --version")
-    assert_match "3.4", output
+    assert_match "3.4.1", output
   end
 end
