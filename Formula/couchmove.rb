@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.7.0 at 2023-08-18T12:59:15.348Z
+# Generated with JReleaser 1.7.0 at 2024-02-29T05:59:28.024Z
 class Couchmove < Formula
   desc "Couchmove is a database migration tool for Couchbase"
   homepage "https://github.com/tchlyah/couchmove"
@@ -7,19 +7,19 @@ class Couchmove < Formula
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-linux-aarch_64.zip"
-    sha256 "8e332061b7392e20e2932c3d13b44871db2d4544fd06b0c3d97281f09a5351be"
+    sha256 "b304395364fc088b1522acbf598faf7557a0bade5647112ccbe5effa1c845234"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-linux-x86_64.zip"
-    sha256 "2decb3e4bb9b1dfebb7159d6299105507810e7ef365b1068e8d8b692af4791bf"
+    sha256 "7997de9e9e228310c2676f69032607bb07a2e9b859865bcb96a3b01c9109163d"
   end
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-osx.zip"
-    sha256 "280e57d9b134b924e10f619e30da6553f92d007ce88351ea3593de96bc9b37e7"
+    sha256 "61b79569996b5c5d93451d60ffcad03ad26b5e36545d50d5734ddbeaf08715b2"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/tchlyah/couchmove/releases/download/v3.4/couchmove-3.4-osx-aarch_64.zip"
-    sha256 "625ecc951f50352945a8d75e09013bca68801778cdefd233993ca18439eaa510"
+    sha256 "b61716e064435ebe244cf746cba870989cb53f9d2f3517eaea3c92703dacdde9"
   end
 
 
